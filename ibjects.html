@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>ibjects</title>
+
+
+
+</head>
+ 
+    <body>
+
+
+        <script>
+            
+            const product = {
+                name : 'socks' ,
+                price : 1220
+            };
+            
+            /*console.log(product);
+            console.log(product.name);
+            
+            product.name = 'cotton socks';
+            console.log(product);
+
+            product.newprop = true ;
+            console.log(product);
+
+            delete product.newprop ;
+            console.log(product);
+
+
+            const product2 = {
+                name:'shirt',
+                rating: {stars:5, count:45},
+                fun: function function1(){
+                    console.log('function inside an object');
+                }
+            };
+            console.log([product2['name']]); //bracket notation lets us use properties that dont work with dot notation
+
+            console.log(product2.name); //dot notation
+            console.log(product2.rating);
+            console.log(product2.rating.count);
+            product2.fun();  //product2 is an object and fun is a function saved inside it .together it is called a method
+            console.log(); //is also a method
+
+            console.log( JSON.stringify(product2)); //STRINGIFY CONVERTS THE JS OBECT INTO A STRING
+            const jsonString = JSON.stringify(product2) ;
+            console.log(JSON.parse( jsonString)); //PARSE converts the string back into an object */
+
+        
+            console.log('hello'.length);
+            console.log('hello'.toUpperCase());
+
+            const object1 = {msg: 'hello'};
+
+            const object2 = object1 ; //copy by reference...object 2 has same reference as object 1
+            object1.msg = 'good job';
+            console.log(object1);
+            console.log(object2);
+
+            const object3 = {msg: 'good job'};
+            console.log(object3===object1);
+            console.log(object2===object1); //gives true
+
+            const object4 = {msg: 'good job'};
+
+           // const msg = object4.msg ;
+            const{ msg } = object4 ;    //is aka destructuring..is a shortcut for above line...same key name
+            console.log(msg);
+
+            const object5 = {
+                //msg: msg         //saves value already saved in msg in object5
+                msg, //does the same
+                method() {            // we dont have to declare the function with key  
+                    console.log('method by shorthand method');
+                }
+            };
+
+            console.log(object5);
+            object5.method();
+
+             
+
+
+
+
+
+        </script>
+  
+
+    </body>
+
+</html>
+ 

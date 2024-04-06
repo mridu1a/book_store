@@ -1,0 +1,100 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <!--this is a comment in html-->>
+    <head>
+        <title>cart quantity</title>
+        Cart quantity
+    </head>
+
+    <body>
+
+        <script> 
+            console.log(typeof 2); //console gives output 'number'
+             let qtty = 0; //let is one way to create a variable
+             const var2 = 5; //to create a constant variable
+             var variable3 = 3; //var is also used to create a variable ,,,,not used nowadays
+
+        
+        </script>
+        <p><button class="show quantity"
+        onclick="
+        console.log('cart quantity:',qtty);">Show quantity</button>
+
+        <button class="add to cart"
+        onclick="
+        if(qtty >10){
+             alert('cart is full') ;
+        }
+        else{
+        qtty= qtty+1;
+        console.log('cart quantity:',qtty);
+        }
+        ">add to cart</button>
+
+        <button class="add 2"
+        onclick="
+        if(qtty >10){
+             alert('cart is full') ;
+        }
+        else{
+        qtty=qtty+2;
+        console.log('cart quantity:',qtty);}
+        ">+2</button>
+
+        <button class="add 3"
+        onclick="
+        if(qtty >10){
+             alert('cart is full') ;
+        }
+        else{
+        qtty=qtty+3;
+        console.log('cart quantity:',qtty);}
+        ">+3</button>
+     
+     <button class="reset"
+     onclick="
+     console.log('cart quantity reset');
+     qtty=0;
+     console.log('cart quantity:',qtty);">reset cart</button></p>
+
+     <p>
+        <button class="remove from cart"
+        onclick="
+        if(qtty-1 <0){
+             alert('not enough items in the cart') ;
+        }
+        else{
+        qtty=qtty-1 ;
+        console.log('cart quantity:',qtty);}
+        ">remove from cart</button>
+
+        <button class="-2"
+        onclick="
+        if(qtty-2 <0){
+            alert('not enough items in cart') ;
+        }
+        else{
+        qtty=qtty-2;
+        console.log('cart quantity:',qtty);}
+        ">-2</button>
+        
+        <button class="-3"
+        onclick="
+        if(qtty-3 <0){
+             alert('not enough items in the cart') ;
+        }
+        else{
+        qtty=qtty-3;
+        console.log('cart quantity:',qtty);}
+        ">-3</button>
+     </p>
+
+
+            </body>
+
+</html>
+

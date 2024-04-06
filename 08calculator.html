@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+    CALCULATOR
+        <link rel="stylesheet" href="styles/calculator.css">
+
+
+    </head>
+
+    <body>
+        <p class="js-displayhere display"></p>
+        
+        <p><button onclick="
+            calculation += '1' ;
+            localStorage.setItem('calculation',calculation);
+        displayCalc()" class="number">1</button>
+        <button class="number" onclick="
+        calculation += '2' ;
+        localStorage.setItem('calculation',calculation);
+        displayCalc()">2</button>
+        <button onclick="
+        calculation += '3' ;
+        localStorage.setItem('calculation',calculation);
+    displayCalc()" class="number">3</button>
+        <button onclick="
+        calculation += ' + ' ;
+        localStorage.setItem('calculation',calculation);     //NOTE
+    displayCalc()" class="op">+</button></p>
+
+        <p><button onclick="
+            calculation += '4' ;
+            localStorage.setItem('calculation',calculation);
+        displayCalc()" class="number">4</button>
+            <button onclick="
+            calculation += '5' ;
+            localStorage.setItem('calculation',calculation);
+        displayCalc()" class="number">5</button>
+            <button onclick="
+            calculation += '6' ;
+            localStorage.setItem('calculation',calculation);
+        displayCalc()" class="number">6</button>
+            <button onclick="
+            calculation += ' - ' ;
+            localStorage.setItem('calculation',calculation);
+        displayCalc()" class="op">-</button></p>
+        
+            <p><button onclick="
+                calculation += '7' ;
+                localStorage.setItem('calculation',calculation);
+            displayCalc()" class="number">7</button>
+                <button onclick="
+                calculation += '8' ;
+                localStorage.setItem('calculation',calculation);
+            displayCalc()" class="number">8</button>
+                <button onclick="
+                calculation += '9' ;
+                localStorage.setItem('calculation',calculation);
+            displayCalc()" class="number">9</button>
+                <button onclick="
+                calculation += ' * ' ;
+                localStorage.setItem('calculation',calculation);
+            displayCalc()" class="op">*</button></p>
+
+            <p><button onclick="
+                calculation += '0' ;
+                localStorage.setItem('calculation',calculation);
+            displayCalc()" class="number">0</button>
+
+            <button onclick="
+            calculation += '.' ;
+            localStorage.setItem('calculation',calculation);
+            displayCalc()" class="number">.</button>
+            <button onclick="
+            calculation += ' / ' ;
+            localStorage.setItem('calculation',calculation);
+        displayCalc()" class="op">/</button>
+
+
+
+            <button onclick="
+            calculation = eval(calculation);
+            localStorage.setItem('calculation', JSON.stringify(calculation));
+        displayCalc()
+        ;" class="op">=</button></p>
+
+        <p><button
+            onclick="console.log('cleared');
+            localStorage.removeItem('calculation');
+            calculation = '' ;
+            displayCalc()
+            
+            " class="clear">Clear</button></p>
+        
+        <script>
+            
+
+           let calculation = localStorage.getItem('calculation') || '' ;
+
+
+
+           function displayCalc(){
+                document.querySelector('.js-displayhere')
+                .innerHTML= calculation ;
+            
+            }
+
+            document.querySelector('.js-displayhere').innerHTML = calculation ;
+        </script>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>

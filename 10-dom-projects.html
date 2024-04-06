@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>dom projects</title>
+<link rel="stylesheet"
+href="styles/10-dom-projects.css">
+
+
+</head>
+ 
+    <body>
+       <p>Youtube subscribe button</p>
+       <button onclick="
+       subscribe();
+       " class ="js-subscribe-button subscribe-button" >Subscribe</button> <!--shouldnt have any spaces-->>
+
+
+
+        <p>Amazon Shipping Calculator</p>
+        <input placeholder="cost of order" class="js-cost-of-order cost-input"
+        onkeydown="console.log(event.key);
+        if (event.key==='Enter'){
+            calculateTotal()
+        }">
+        <button onclick="calculateTotal()" class="calculate-button">Calculate</button>
+        <p class="js-ttlcost"></p>
+
+
+        <script src="scripts/10-dom-projects.js">
+            
+
+
+        </script>
+  
+
+    </body>
+
+</html>
+ 

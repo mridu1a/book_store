@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <TITLE>9d question</TITLE>
+</head>
+
+<body> 
+
+<input class="js-inputname" onkeydown=" 
+console.log(event.key);
+if(event.key === 'Enter'){
+    nameis()
+}
+ " placeholder="enter your name" >
+<button>submit</button>
+<p class="js-printhere"></p>
+
+
+
+    <script>
+        function nameis(){
+            const inputname= document.querySelector('.js-inputname') ;
+            let name2 = inputname.value ;
+            
+            document.querySelector('.js-printhere')
+            .innerHTML= (`your name is ${name2}`) ;
+
+        }
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

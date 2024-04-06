@@ -1,0 +1,56 @@
+body{
+    font-family: Arial;
+    background-color: rgb(209, 192, 220);
+}
+
+.maintitle{
+    font-size: x-large;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+.genre{
+    font-family: Arial;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.img{
+    height: 275px;
+    width: 183px;
+}
+
+.addToCart{
+    margin-bottom: 10px;
+    background-color: rgb(198, 172, 205);
+    border: none;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+}
+
+.title{
+    font-family: Arial;
+    font-weight: bold;
+    font-size:large;
+    margin: 0px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.home{
+    font-family: Arial;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    width: 120px;
+}
+

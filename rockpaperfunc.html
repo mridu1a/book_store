@@ -1,0 +1,101 @@
+<!IDOCTYPE html>
+<html>
+    <head>
+        <title>ROCK PAPER SCISSOR</title>
+        ROCK PAPER SCISSOR SHOOT!
+
+
+
+    </head>
+
+    <BODY>
+       <p> <button onclick="
+
+            move = 'rock' ;
+            playGame('rock');
+
+            ">rock</button>
+
+        
+        <button onclick="
+        
+        move = 'paper' ;
+       
+        playGame('paper');
+
+        ">paper</button>
+
+
+        <button onclick="
+        
+        move = 'scissor' ;
+        playGame('scissor');
+        
+        ">scissor</button> </p>
+         
+    <script>
+        let randomNumber = 0 ; //const is not used since variable is reassigned agian and again
+
+        
+        let result = '' ;
+
+        function pickComputerMove() {
+            let cmove = '' ;
+            randomNumber = Math.random();
+            if (0 <= randomNumber && randomNumber<= (1/3)){
+                cmove = 'rock' ;}
+            else if ((1/3) < randomNumber && randomNumber <= (2/3)){
+                cmove = 'paper' ;}
+            else{
+                cmove = 'scissor' ;     }//scope:any variable created inside curly bracket exists only there
+            
+        return cmove ;
+            
+            /*return; //will return undefined
+            console.log('after'); //anything after return is not going to run*/
+
+        }
+
+        function playGame(playerMove)
+        {
+            cmove = pickComputerMove() ;
+        
+        if(playerMove==='paper')
+        {
+        if(cmove == 'rock' ){
+                result= 'you win!'; }
+            else if(cmove == 'paper' ){
+                result = 'tie' ; }
+            else if(cmove == 'scissor' ){
+                    result = 'you loose!' ; }
+        }   
+
+        else if(playerMove==='scissor')
+        {
+        
+        if(cmove == 'rock' ){
+                result= 'you loose'; }
+            else if(cmove == 'paper' ){
+                result = 'You win!' ; }
+            else if(cmove == 'scissor' ){
+                    result = 'tie!' ; }
+        }
+
+        else if(playerMove==='rock')
+        {
+            if(cmove == 'rock' ){
+                result= 'Tie'; }
+            else if(cmove == 'paper' ){
+                result = 'You loose!' ; }
+            else if(cmove == 'scissor' ){
+                    result = 'you win!' ; }
+        }
+        alert(`you picked ${playerMove},computer chose ${cmove} . ${result}` );
+        
+        }
+
+    </script>
+        
+    </BODY>
+
+</html>

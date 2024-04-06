@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>dom:documet object model</title>
+
+
+
+</head>
+ 
+    <body>
+        <button>hello</button>
+        <button class="js-button">second button</button>  (<!--html elements are js objects...objects are values that can be saved inside variables-->)
+
+
+        <script>
+           console.log( document.querySelector('button').innerHTML);
+
+           console.log(document.querySelector('.js-button'));
+            //lets us get any element frm html and put it inside js
+
+            document.querySelector('button').innerHTML = 'changed';
+
+            /*
+            console.log(document.title);
+            console.log(document.body); //doc.body lets us get body element and put it inside js
+            console.log(document.body.innerHTML); 
+            document.body.innerHTML = '<button>new buttin</button>';//INNERHTML GIVES CONTROL OVER ALL THE CONTENTS INSIDE HTML
+
+            //gives all the code in html
+            
+            document.body.innerHTML = 'hello' ; //removes everything in the body and adds just text hello
+            document.title = 'good job' ;
+            */
+
+        </script>
+  
+
+    </body>
+
+</html>
+ 

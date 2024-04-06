@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+    CALCULATOR
+
+    </head>
+
+    <body>
+        <p class="js-displayhere"></p>
+
+        <p><button onclick="
+            calculation += '1' ;
+        displayCalc()
+        ">1</button>
+        <button onclick="
+        calculation += '2' ;
+        displayCalc()">2</button>
+        <button onclick="
+        calculation += '3' ;
+    displayCalc()">3</button>
+        <button onclick="
+        calculation += ' + ' ;     //NOTE
+    displayCalc()">+</button></p>
+
+        <p><button onclick="
+            calculation += '4' ;
+        displayCalc()
+        ">4</button>
+            <button onclick="
+            calculation += '5' ;
+        displayCalc()">5</button>
+            <button onclick="
+            calculation += '6' ;
+        displayCalc()">6</button>
+            <button onclick="
+            calculation += ' - ' ;
+        displayCalc()">-</button></p>
+        
+            <p><button onclick="
+                calculation += '7' ;
+            displayCalc()
+            ">7</button>
+                <button onclick="
+                calculation += '8' ;
+            displayCalc()">8</button>
+                <button onclick="
+                calculation += '9' ;
+            displayCalc()">9</button>
+                <button onclick="
+                calculation += ' * ' ;
+            displayCalc()">*</button></p>
+
+            <p><button onclick="
+                calculation += '0' ;
+            displayCalc()">0</button>
+            <button onclick="
+            calculation += ' / ' ;
+        displayCalc()">/</button>
+            <button onclick="
+            calculation = eval(calculation);
+        displayCalc()
+        ;">=</button></p>
+
+        <p><button
+            onclick="
+                calculation= 0;
+                displayCalc()
+                ">clear</button></p>
+        
+        <script>
+            let calculation = "" ;
+            function displayCalc(){
+                document.querySelector('.js-displayhere')
+                .innerHTML= calculation ;
+            }
+        </script>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
